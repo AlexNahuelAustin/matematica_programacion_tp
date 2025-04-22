@@ -50,3 +50,4 @@ while True:
 #juego de adivinar el numero y salte cuanto intentos tuvo o q sean con intentos prestablecido (si se acaban qur salga el numero secreto)
 
 
+#Sistema conversor esta funcionando
