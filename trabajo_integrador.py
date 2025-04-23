@@ -67,9 +67,9 @@ while True: # Se crea el Menu de opciones (While al entrar al True solo toma ver
         print("¡Hasta luego!")
         break
 
+#Probando el repositorio
 
-
-#juego de adivinar el numero y salte cuanto intentos tuvo o q sean con intentos prestablecido (si se acaban qur salga el numero secreto)
+#Juego de adivinar el numero y salte cuanto intentos tuvo o q sean con intentos preestablecido (si se acaban, tiene que salir el numero secreto)
 
 
 #Sistema conversor esta funcionando
