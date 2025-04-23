@@ -1,6 +1,15 @@
-#menu para convertir de 1.binario a decimal o 2.decimal a binario o 3.salir del menu
+#menu para convertir de 1.decimal a binario o 2.binario a decimal o 3 Juego 4 Salir
+import random
+
+
 while True: # Se crea el Menu de opciones (While al entrar al True solo toma verdadero)
-    opcion = input("ingrese una opcion:\n 1.para conversor a binario\n 2.para el conversor a decimal.\n 3.Juego \n 4.salir")
+    print("Ingrese una opción:")
+    print("1. Conversor decimal a binario")
+    print("2. Conversor binario a decimal")
+    print("3. Juego de adivinar el número")
+    print("4. Salir")
+    opcion = input("Ingrese su numero ")
+    
     if opcion == "1": # Primera opcion del menu
         print("pasaje de decimal a binario")
         numero = input("ingrese un numero del 0 al 14: ")
@@ -13,6 +22,7 @@ while True: # Se crea el Menu de opciones (While al entrar al True solo toma ver
                 print("Por favor, ingrese un número entre 0 y 14: ")
         except ValueError:
             print("Entrada inválida. Por favor, ingrese un número entero.")
+    
     elif opcion == "2": # Segunda Opcion del Menu
         print("conversor de binario a decimal")
         binario = input("ingrese un numero binario: ")
@@ -24,12 +34,38 @@ while True: # Se crea el Menu de opciones (While al entrar al True solo toma ver
                 print("El número binario ingresado representa un valor fuera del rango 0-14.")
         except ValueError: # Variable que bloquea el try (Captura y manejana el error)
             print("Entrada inválida. Por favor, ingrese un número binario válido (solo 0s y 1s).")
+        
     elif opcion == "3": # Tercera Opcion del menu
+        print("\nJuego: Adivina el número entre 1 y 100")
+        numero_correcto =random.randint(1, 100)
+        while True:
+            try:
+                numero_usuario = int(input("Adivina el número: "))
+                if numero_usuario == numero_correcto:
+                    print("¡Has adivinado el número!")
+                    break
+                elif numero_usuario < numero_correcto:
+                    print("Intenta con un número mayor.")
+                else:
+                    print("Intenta con un número menor.")
+            except ValueError:
+                print("Por favor, ingrese un número entero válido.")
+        
+    elif opcion == "4": # Tercera Opcion del menu
         print("saliendo")
         break
     else:
         print("Opción inválida. Por favor, ingrese 1, 2, 3 o 4.")
+        continue
     
+    print("\n¿Querés empezar de nuevo?")
+    print("1. Sí")
+    print("2. No")
+    repetir = input("Elegí una opción: ")
+
+    if repetir != "1":
+        print("¡Hasta luego!")
+        break
 
 
 
