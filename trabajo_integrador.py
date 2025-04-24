@@ -7,12 +7,12 @@ def contador_binario():
 
     print("Estos son los numeros Binarios del 0 al 15")
     time.sleep(2)
-
+    #Ciclo for para calcular los primeros 15 numeros decimales
     for i in range(0,16):   
         num = i
         time.sleep(0.5)
         binario = "0"
-
+        #Ciclo while para calcular el numero binario 
         while num >= 2:
             binario += str(num % 2)
             num = num // 2
@@ -74,8 +74,6 @@ while True: # Se crea el Menu de opciones (While al entrar al True solo toma ver
     elif opcion == "4": # Agregamos la función de contador binario
         contador_binario()
 
-
-
     elif opcion == "5": # Tercera Opcion del menu
         print("saliendo")
         break
@@ -98,5 +96,4 @@ while True: # Se crea el Menu de opciones (While al entrar al True solo toma ver
 
 
 #Sistema conversor esta funcionando
-
 
