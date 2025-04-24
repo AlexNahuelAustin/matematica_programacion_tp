@@ -73,3 +73,26 @@ while True: # Se crea el Menu de opciones (While al entrar al True solo toma ver
 
 
 #Sistema conversor esta funcionando
+
+# Creamos la función contador_binario que muestra los números del 0 al 15 y sus respectivos num binarios
+def contador_binario():
+    
+    import time
+
+    print("Estos son los numeros Binarios del 0 al 15")
+    time.sleep(2)
+
+    for i in range(0,16):   
+        num = i
+        time.sleep(0.5)
+        binario = "0"
+
+        while num >= 2:
+            binario += str(num % 2)
+            num = num // 2
+
+        binario += str(num)
+
+        print(f"{i} = {binario[::-1]}")
+
+contador_binario()
