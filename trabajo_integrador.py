@@ -57,8 +57,8 @@ while True: # Se crea el Menu de opciones (While al entrar al True solo toma ver
             print("Entrada inválida. Por favor, ingrese un número binario válido (solo 0s y 1s).")
         
     elif opcion == "3": # Tercera Opcion del menu
-        print("\nJuego: Adivina el número entre 1 y 100")
-        numero_correcto =random.randint(1, 100)
+        print("\nJuego: Adivina el número entre 1 y 10")
+        numero_correcto =random.randint(1, 10)
         while True:
             try:
                 numero_usuario = int(input("Adivina el número: "))
@@ -90,10 +90,5 @@ while True: # Se crea el Menu de opciones (While al entrar al True solo toma ver
         print("¡Hasta luego!")
         break
 
-#Probando el repositorio
 
-#Juego de adivinar el numero y salte cuanto intentos tuvo o q sean con intentos preestablecido (si se acaban, tiene que salir el numero secreto)
-
-
-#Sistema conversor esta funcionando
 
